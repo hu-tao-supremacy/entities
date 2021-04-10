@@ -4,5 +4,9 @@
   "main": "index.js",
   "repository": "https://github.com/hu-tao-supremacy/entities.git",
   "author": "FleeingSunlight <gh@fleeingsunlight.dev>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@nestjs/graphql": "^7.10.3",
+    "typeorm": "^0.2.32"
+  }
 }
