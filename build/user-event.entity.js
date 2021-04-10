@@ -7,7 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Attendance = exports.UserEvent = void 0;
-const common_1 = require("api/gen/gql/hts/common/common");
+const common_1 = require("./api/gen/gql/hts/common/common");
 const graphql_1 = require("@nestjs/graphql");
 const typeorm_1 = require("typeorm");
 const event_entity_1 = require("./event.entity");
