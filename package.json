@@ -7,6 +7,9 @@
   "license": "MIT",
   "dependencies": {
     "@nestjs/graphql": "^7.10.3",
+    "@nestjs/microservices": "^7.6.15",
+    "lodash": "^4.17.21",
+    "rxjs": "^6.6.7",
     "typeorm": "^0.2.32"
   },
   "scripts": {
