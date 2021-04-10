@@ -1,7 +1,7 @@
 {
   "name": "@hu-tao-supremacy/entities",
   "version": "1.0.0",
-  "main": "index.ts",
+  "main": "build/index.js",
   "repository": "https://github.com/hu-tao-supremacy/entities.git",
   "author": "FleeingSunlight <gh@fleeingsunlight.dev>",
   "license": "MIT",
