@@ -1,0 +1,29 @@
+name: Build
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "!build/**"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.DODOCO_BOT_PAT }}
+      - run: echo "SHA7=${GITHUB_SHA::7}" >> $GITHUB_ENV
+      - run: |
+          rm -rf build/
+          git submodule update --init
+          yarn
+          yarn build
+      - run: |
+          git add -f build/
+          git commit -m 'release(build/): ${{ env.SHA7 }}'
+          git push
+        env:
+          GIT_COMMITTER_NAME: dodoco-bot
+          GIT_AUTHOR_NAME: dodoco-bot
+          EMAIL: 77519537+dodoco-bot@users.noreply.github.com
