@@ -8,5 +8,8 @@
   "dependencies": {
     "@nestjs/graphql": "^7.10.3",
     "typeorm": "^0.2.32"
+  },
+  "scripts": {
+    "build": "tsc"
   }
 }
