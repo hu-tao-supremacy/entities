@@ -1,8 +1,8 @@
 name: Init Submodules
 on:
   push:
-    branches:
-      - init-submodules
+    paths:
+      - "submodules.sh"
 jobs:
   init:
     runs-on: ubuntu-latest
