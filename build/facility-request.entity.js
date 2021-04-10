@@ -8,7 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.FacilityRequest = void 0;
 const graphql_1 = require("@nestjs/graphql");
-const common_1 = require("@onepass/graphql/common/common");
+const common_1 = require("api/gen/gql/hts/common/common");
 const typeorm_1 = require("typeorm");
 const event_entity_1 = require("./event.entity");
 const facility_entity_1 = require("./facility.entity");
