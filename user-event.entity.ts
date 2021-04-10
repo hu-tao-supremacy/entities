@@ -1,4 +1,4 @@
-import { UserEvent_Status as Status } from 'api/gen/gql/hts/common/common';
+import { UserEvent_Status as Status } from './api/gen/gql/hts/common/common';
 import { Field, InputType, Int, IntersectionType, ObjectType, OmitType, registerEnumType } from '@nestjs/graphql';
 import { Column, Entity, Index, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
 import { Event } from './event.entity';

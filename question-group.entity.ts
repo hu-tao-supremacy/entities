@@ -1,5 +1,5 @@
 import { Field, InputType, Int, ObjectType, registerEnumType } from '@nestjs/graphql';
-import { QuestionGroupType } from 'api/gen/gql/hts/common/common';
+import { QuestionGroupType } from './api/gen/gql/hts/common/common';
 import { Column, Entity, Index, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 import { Event } from './event.entity';
 import { Question } from './question.entity';
