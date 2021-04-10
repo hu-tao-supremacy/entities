@@ -8,8 +8,9 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
     "paths": {
-      "@onepass/graphql/*": "api/gen/gql/hts/*"
+      "@onepass/graphql/*": ["api/gen/gql/hts/*"]
     }
   }
 }
